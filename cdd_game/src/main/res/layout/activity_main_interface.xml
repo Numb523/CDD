@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:gravity="right|bottom">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--开始游戏按钮-->
+        <ImageButton
+            android:id="@+id/start"
+            android:layout_width="144dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="Click"
+            android:src="@drawable/start_1"></ImageButton>
+        <!--游戏设置按钮-->
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="144dp"
+            android:layout_height="49dp"
+            android:onClick="Click"
+            android:src="@drawable/setting_1"></ImageButton>
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="30dp">
+    <!--帮助按钮，可以用对话框弹出帮助-->
+    <Button
+        android:id="@+id/help"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blue"
+        android:onClick="Click"
+        android:text="@string/help"></Button>
+    <!--创建房间-->
+    <Button
+        android:id="@+id/create"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:background="@drawable/blue"
+        android:onClick="Click"
+        android:text="@string/create"
+        android:layout_marginRight="10dp"></Button>
+    <!--创建房间-->
+    <Button
+        android:id="@+id/join"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:background="@drawable/blue"
+        android:onClick="Click"
+        android:text="@string/join"></Button>
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.test"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml
+10
+11    <!-- 以下是使用wifi访问网络所需要的权限 -->
+12    <!-- 修改网络状态的权限 -->
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:7:5-79
+13-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:7:22-76
+14    <!-- 修改wifi状态的权限 -->
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:9:5-76
+15-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:9:22-73
+16    <!-- 访问wifi权限 -->
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:11:5-76
+17-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:11:22-73
+18    <!-- 访问网络状态权限 -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:13:5-79
+19-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:13:22-76
+20    <!-- 访问网络权限 -->
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:15:5-67
+21-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:15:22-64
+22
+23    <application
+23-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:17:5-41:19
+24        android:allowBackup="true"
+24-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:18:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\Song JunYue\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@drawable/icon"
+27-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:19:9-38
+28        android:label="@string/app_name"
+28-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:20:9-41
+29        android:supportsRtl="true"
+29-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:21:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.AppCompat.NoActionBar" >
+31-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:22:9-59
+32        <service
+32-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:23:9-25:48
+33            android:name="com.example.test.View.MusicService"
+33-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:24:13-46
+34            android:exported="false" />
+34-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:25:13-37
+35
+36        <activity android:name="com.example.test.View.PauseActivity" />
+36-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:27:9-56
+36-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:27:19-53
+37        <activity android:name="com.example.test.View.PlayingActivity" />
+37-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:28:9-58
+37-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:28:19-55
+38        <activity android:name="com.example.test.View.main_Interface" />
+38-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:29:9-56
+38-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:29:19-54
+39        <activity android:name="com.example.test.View.BaseActivity" />
+39-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:30:9-54
+39-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:30:19-52
+40        <activity android:name="com.example.test.View.register" />
+40-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:31:9-50
+40-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:31:19-48
+41        <activity android:name="com.example.test.View.Settings" />
+41-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:32:9-50
+41-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:32:19-48
+42        <activity android:name="com.example.test.View.login" >
+42-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:33:9-39:20
+42-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:33:19-45
+43            <intent-filter>
+43-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:34:13-38:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:35:17-69
+44-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:35:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:37:17-77
+46-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:37:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity android:name="com.example.test.View.help" />
+49-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:40:9-47
+49-->E:\CDD\cdd(3)\cdd_game\src\main\AndroidManifest.xml:40:19-44
+50    </application>
+51
+52</manifest>

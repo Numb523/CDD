@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--登陆注册界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.example.test.View.login"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|bottom">
+        <!--输入昵称-->
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textColorHint="#4e4c4c"
+            android:maxLines="3"
+            android:textColor="#111111"
+            android:background="#FFFFFF"
+            android:textSize="24dp"
+            android:autofillHints="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/blue" />
+        <!--注册按钮-->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+</LinearLayout>
+
